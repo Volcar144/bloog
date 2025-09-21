@@ -20,6 +20,14 @@ export const config = defineConfig({
       publicFolder: "public",
       mediaRoot: "uploads",
     },
+    search: {
+    tina: {
+      indexerToken: 'd3dacfb1e8df7c51025ff97dfe8d155beddfa5b5',
+      stopwordLanguages: ['eng'],
+    },
+    indexBatchSize: 100,
+    maxSearchIndexFieldLength: 100,
+  },
   },
   build: {
     publicFolder: "public", // The public asset folder for your framework
